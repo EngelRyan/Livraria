@@ -21,17 +21,6 @@ public class Livro {
         this.title = input.nextLine();
 
         System.out.println("\nInforme o código do livro: Ex(1234)");
-        /*this.codigo = input.nextLine();
-        for(Filial filial : Livraria.filiais){
-            for(Livro livro : filial.livros){
-                do {
-                    if(this.codigo.equals(livro.codigo)) {
-                        System.out.println("\nEsse código ja existe!");
-                        this.codigo = input.nextLine();
-                    }
-                }while(this.codigo.equals(livro.codigo));
-            }
-        }*/
         do{
             this.codigo = input.nextLine();
             if(codigo.length() != 4){
