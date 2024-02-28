@@ -14,27 +14,31 @@ public class Livraria {
 
         while(condition){
             System.out.println(
-            "\n1 – Cadastrar novo livro\n" +
-            "2 – Listar livros\n" +
-            "3 – Buscar livros por nome\n" +
-            "4 – Buscar livros por categoria\n" +
-            "5 – Buscar livros por preço\n" +
-            "6 – Busca por quantidade em estoque\n" +
-            "7 – Valor total no estoque\n" +
-            "8 - Listagem de estoque\n" +
-            "9 - Atualizar estoque\n" +
-            "10 - Cadastrar nova filial\n"+
-            "11 - Busca livro por código\n"+
-            "0 – Encerrar atividades");
+                    """
+
+                            1 – Cadastrar novo livro
+                            2 – Listar livros
+                            3 – Buscar livros por nome
+                            4 – Buscar livros por categoria
+                            5 – Buscar livros por preço
+                            6 – Busca por quantidade em estoque
+                            7 – Valor total no estoque
+                            8 - Listagem de estoque
+                            9 - Atualizar estoque
+                            10 - Cadastrar nova filial
+                            11 - Busca livro por código
+                            0 – Encerrar atividades""");
             System.out.print("\n O que deseja fazer? ");
 
             String option = input.next();
 
             switch (option) {
                 case "0" -> {
-                    System.out.println("\nDeseja sair sem atualizar o estoque?\n" +
-                            "0) Sair sem salvar\n" +
-                            "9) Atualizar estoque");
+                    System.out.println("""
+
+                            Deseja sair sem atualizar o estoque?
+                            0) Sair sem salvar
+                            9) Atualizar estoque""");
                     option = input.next();
                     if (option.equals("0")) {
                         condition = false;
